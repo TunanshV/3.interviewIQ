@@ -91,7 +91,18 @@ RAZORPAY_KEY_ID=your_razorpay_key_id
 RAZORPAY_KEY_SECRET=your_razorpay_key_secret
 ```
 
-### 2. Start the frontend
+### 2. Configure the frontend
+
+Create a `client/.env` file for the browser-side environment variables:
+
+```env
+VITE_FIREBASE_APIKEY=your_firebase_api_key
+VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
+```
+
+`VITE_FIREBASE_APIKEY` is used for Google sign-in through Firebase, and `VITE_RAZORPAY_KEY_ID` is used on the pricing page when creating payment options in the browser.
+
+### 3. Start the frontend
 
 ```bash
 cd client
@@ -133,3 +144,4 @@ If you change the backend port, update the API base URL in `client/src/App.jsx`.
 ## License
 
 This project is provided as-is for learning, demo, and development use.
+

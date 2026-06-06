@@ -136,7 +136,6 @@ If you change the backend port, update the API base URL in `client/src/App.jsx`.
 
 ## Notes
 
-- The app currently points the frontend to the backend at `http://localhost:8000`.
 - Resume upload expects a PDF file.
 - Question generation requires role, experience, and interview mode.
 - The interview uses AI feedback and stores performance data for later review.
